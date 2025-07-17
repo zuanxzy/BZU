@@ -1,0 +1,10 @@
+<nav>
+  <ul>
+    <li><a href="index.html">Laman Utama</a></li>
+    <li><a href="aduan.html">Buat Aduan</a></li>
+    <li><a href="bantuan.html">Senarai Bantuan</a></li>
+    <li><a href="sumbangan.html">Sumbangan</a></li>
+    <li><a href="hubungi.html">Hubungi Kami</a></li>
+    <li><button onclick="toggleLanguage()">🇲🇾 / 🇬🇧</button></li>
+  </ul>
+</nav>

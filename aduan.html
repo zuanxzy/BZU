@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aduan | BZU</title>
+  <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/form.css">
+<script src="js/theme.js"></script>
+
+</head>
+<body>
+
+  <!-- ====== NAVBAR ====== -->
+  <header>
+    <div class="navbar">
+      <div class="logo">BZU</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Laman Utama</a></li>
+        <li><a href="aduan.html">Aduan</a></li>
+        <li><a href="bantuan.html">Bantuan</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ====== FORM SECTION ====== -->
+  <section class="form-section">
+    <div class="container">
+      <h2>Borang Aduan</h2>
+      <p>Sila isi maklumat berikut untuk membuat aduan. Semua maklumat dirahsiakan dan hanya digunakan untuk tindakan lanjut.</p>
+
+      <form action="https://formspree.io/f/xqalakjw" method="POST">
+        <label for="nama">Nama Penuh:</label>
+        <input type="text" name="nama" id="nama" required>
+
+        <label for="email">Emel:</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="telefon">Nombor Telefon:</label>
+        <input type="tel" name="telefon" id="telefon" required>
+
+        <label for="lokasi">Lokasi Aduan:</label>
+        <input type="text" name="lokasi" id="lokasi" required>
+
+        <label for="kategori">Kategori Aduan:</label>
+        <select name="kategori" id="kategori" required>
+          <option value="">-- Sila Pilih --</option>
+          <option value="Makanan">Permintaan Bantuan Makanan</option>
+          <option value="Jalan">Aduan Jalan Rosak</option>
+          <option value="Kewangan">Permohonan Bantuan Kewangan</option>
+          <option value="Kesihatan">Kesihatan / Rawatan</option>
+          <option value="Lain">Lain-lain</option>
+        </select>
+
+        <label for="mesej">Penerangan Aduan:</label>
+        <textarea name="mesej" id="mesej" rows="5" required></textarea>
+
+        <button type="submit" class="btn">Hantar Aduan</button>
+      </form>
+
+      <br>
+      <a href="index.html" class="btn-outline">← Kembali ke Laman Utama</a>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer>
+    <p>© 2025 BZU - Bantuan Untuk Semua</p>
+  </footer>
+
+  <script src="js/theme.js"></script>
+</body>
+</html>

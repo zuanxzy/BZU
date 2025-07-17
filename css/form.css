@@ -1,0 +1,111 @@
+/* ==== Form Section Styling (GEMPAK DARK MODE) ==== */
+.form-section {
+  background: linear-gradient(to bottom, #0f172a, #1e293b);
+  padding: 5rem 2rem;
+  text-align: center;
+  color: #f1f5f9;
+}
+
+.form-section .container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.form-section .container p {
+  color: #e2e8f0;
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+form {
+  background: rgba(30, 41, 59, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 2.5rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+}
+
+form:hover {
+  box-shadow: 0 0 25px rgba(59, 130, 246, 0.3);
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #cbd5e1;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #334155;
+  border-radius: 0.6rem;
+  font-size: 1rem;
+  background-color: #0f172a;
+  color: #f1f5f9;
+  transition: border 0.3s ease, background 0.3s ease;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  border-color: #3b82f6;
+  outline: none;
+  background-color: #1e293b;
+}
+
+form button {
+  background: linear-gradient(to right, #3b82f6, #1e40af);
+  color: white;
+  font-weight: bold;
+  padding: 0.8rem 1.6rem;
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+  box-shadow: 0 5px 15px rgba(59, 130, 246, 0.4);
+}
+
+form button:hover {
+  background: #1e40af;
+}
+
+/* Button Outline (Kembali) */
+.btn-outline {
+  margin-top: 2.5rem;
+  background: transparent;
+  border: 2px solid #f1f5f9;
+  color: #f1f5f9;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.6rem;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn-outline:hover {
+  background: #3b82f6;
+  color: #1e3a8a;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .form-section {
+    padding: 2rem 1rem;
+  }
+
+  form {
+    padding: 1.5rem;
+  }
+}
