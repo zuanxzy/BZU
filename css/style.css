@@ -7,7 +7,7 @@
 html, body {
   font-family: 'Poppins', 'Open Sans', sans-serif;
   background-color: #0f172a;
-  color: #ffffff;
+  color: #f1f5f9;
   line-height: 1.6;
   scroll-behavior: smooth;
 }
@@ -67,7 +67,8 @@ header {
 .hero {
   padding: 6rem 2rem 4rem;
   text-align: center;
-  color: white;
+  color: #f1f5f9;
+  background: linear-gradient(to bottom right, #1e3a8a, #111827);
   position: relative;
 }
 .hero::before {
@@ -75,7 +76,7 @@ header {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4);
   z-index: 0;
 }
 .hero h1,
@@ -110,7 +111,7 @@ header {
   border: none;
 }
 .btn:hover {
-  background: #212186;
+  background: #1e3a8a;
 }
 .btn-outline {
   background: transparent;
@@ -118,16 +119,16 @@ header {
   border: 2px solid white;
 }
 .btn-outline:hover {
-  background:oklab(39.951% -0.02395 -0.16296);
+  background: white;
   color: #1d4ed8;
 }
 
-/* ==== Pengenalan ==== */
+/* ==== Intro Section ==== */
 .intro {
-  background-color: #ffffff;
+  background: #1e293b;
   padding: 3rem 2rem;
   text-align: center;
-  color: #0f172a;
+  color: #e2e8f0;
 }
 .intro .container {
   max-width: 900px;
@@ -136,22 +137,22 @@ header {
 .intro h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #1d4ed8;
+  color: #93c5fd;
 }
 .intro p {
   font-size: 1.1rem;
   margin-bottom: 1.2rem;
   text-align: justify;
-  color: #334155;
+  color: #cbd5e1;
 }
 
 /* ==== Footer ==== */
 footer {
-  background: #1e293b;
+  background: #0f172a;
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
-  color: #f1f5f9;
+  color: #94a3b8;
 }
 
 /* ==== Responsive ==== */
@@ -174,70 +175,19 @@ footer {
 
 /* ==== Form Section ==== */
 .form-section {
-  background-color: #ffffff;
-  color: #0f172a;
+  background: #1e293b;
+  color: #e2e8f0;
   padding: 3rem 2rem;
   text-align: center;
 }
 .form-section h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #1d4ed8;
+  color: #93c5fd;
 }
 .form-section p {
   font-size: 1.1rem;
-  color: #334155;
+  color: #cbd5e1;
   margin-bottom: 2rem;
 }
 
-/* ==== Dark Mode ==== */
-body.dark-mode {
-  background: #0f172a;
-  color: #f1f5f9;
-}
-body.dark-mode header {
-  background: rgba(30, 41, 59, 0.85);
-  border-bottom: 1px solid #334155;
-}
-body.dark-mode .nav-links li a {
-  color: #f1f5f9;
-}
-body.dark-mode .nav-links li a:hover {
-  color: #60a5fa;
-}
-body.dark-mode .language-btn {
-  background: #334155;
-  color: #f1f5f9;
-}
-body.dark-mode .hero {
-  background: linear-gradient(to bottom right, #1e3a8a, #111827);
-  color: #f1f5f9;
-}
-body.dark-mode .hero::before {
-  background: rgba(0, 0, 0, 0.4);
-}
-body.dark-mode .btn {
-  background: #3b82f6;
-  color: white;
-}
-body.dark-mode .btn:hover {
-  background: #1e3a8a;
-}
-body.dark-mode .btn-outline {
-  border-color: #f1f5f9;
-  color: #f1f5f9;
-}
-body.dark-mode .intro {
-  background: #1e293b;
-  color: #e2e8f0;
-}
-body.dark-mode .intro h2 {
-  color: #93c5fd;
-}
-body.dark-mode .intro p {
-  color: #cbd5e1;
-}
-body.dark-mode footer {
-  background: #0f172a;
-  color: #94a3b8;
-}
