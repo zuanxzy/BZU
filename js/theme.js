@@ -2,11 +2,13 @@ function toggleDarkMode() {
   const body = document.body;
   const isDark = body.classList.toggle('dark-mode');
 
-  // Tukar ikon button kalau nak (optional)
-  const toggleBtn = document.querySelector('.language-btn:last-of-type');
-  toggleBtn.textContent = isDark ? '☀️' : '🌓';
+  // Prefer a dedicated button class or ID
+  const toggleBtn = document.querySelector('.theme-toggle-btn');
+  if (toggleBtn) {
+    toggleBtn.textContent = isDark ? '☀️' : '🌓';
+    toggleBtn.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+  }
 
-  // Simpan pilihan dalam localStorage
   localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
 }
 
@@ -14,8 +16,10 @@ window.addEventListener('DOMContentLoaded', () => {
   if (localStorage.getItem('darkMode') === 'enabled') {
     document.body.classList.add('dark-mode');
 
-    // Tukar ikon terus bila load
-    const toggleBtn = document.querySelector('.language-btn:last-of-type');
-    toggleBtn.textContent = '☀️';
+    const toggleBtn = document.querySelector('.theme-toggle-btn');
+    if (toggleBtn) {
+      toggleBtn.textContent = '☀️';
+      toggleBtn.setAttribute('aria-label', 'Switch to light mode');
+    }
   }
 });
