@@ -12,11 +12,14 @@ function toggleLanguage() {
     el.innerHTML = translated;
   });
 
-  // Optional: Update the toggle button icon or text
+  // Update toggle state
+  isEnglish = !isEnglish;
+
+  // Update the toggle button text
   const langBtn = document.querySelector('.language-btn');
   if (langBtn) {
-    langBtn.textContent = isEnglish ? '🇲🇾 / 🇬🇧' : '🇬🇧 / 🇲🇾';
+    langBtn.textContent = isEnglish ? '🇲🇾' : 'EN';
+    // Atau kalau nak kedua-dua
+    // langBtn.textContent = isEnglish ? '🇲🇾 / EN' : 'EN / 🇲🇾';
   }
-
-  isEnglish = !isEnglish;
 }
